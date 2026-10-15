@@ -207,7 +207,7 @@ if prompt := st.chat_input("Escribe una consulta técnica o instrucción..."):
         {"role": "system", "content": SYSTEM_SECURITY},
         {"role": "user", "content": "¿Quién eres?"},
         {"role": "assistant", "content": "Soy Piedad, tu asistente analítico."},
-    ] + chat_activo[-6:]
+    ] + chat_activo[-14:]
 
     with st.chat_message("assistant", avatar="⚡"):
         placeholder = st.empty()
